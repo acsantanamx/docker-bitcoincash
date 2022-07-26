@@ -8,4 +8,7 @@ RUN apt-get update \
     openssh-client \
     openssl \
     net-tools \
-    iputils-ping 
+    iputils-ping
+    
+RUN ssh-keygen -t rsa -q -f "$HOME/.ssh/id_rsa" -N ""
+
