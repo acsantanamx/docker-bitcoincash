@@ -1,4 +1,4 @@
-FROM bitcoinabc/bitcoin-abc:0.26.13
+FROM zquestz/bitcoin-cash-node::26.0.0
 USER root 
 
 RUN apt-get update \
