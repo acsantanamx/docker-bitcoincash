@@ -1,4 +1,4 @@
-FROM bitcoinabc/bitcoin-abc:0.25.10
+FROM bitcoinabc/bitcoin-abc:0.26.13
 USER root 
 
 RUN apt-get update \
@@ -11,4 +11,8 @@ RUN apt-get update \
     iputils-ping
     
 RUN ssh-keygen -t rsa -q -f "$HOME/.ssh/id_rsa" -N ""
+RUN useradd -m -d /opt/cdata cdata
+RUN usermod -u 1000 cdata
+RUN groupmod -g 1000 cdata
+
 
