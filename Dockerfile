@@ -1,4 +1,4 @@
-FROM zquestz/bitcoin-cash-node:26.0.0
+FROM zquestz/bitcoin-cash-node:27.0.0
 USER root 
 
 RUN apt-get update \
